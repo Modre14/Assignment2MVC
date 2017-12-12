@@ -6,9 +6,9 @@ to enter a draw.
 1. Open the solution
 2. Run the application
 3. The webpage should be displayed in a webbrowser
+4. You can't do much else
 
 
-
-## Made by Morten Dreier and Saif Al-Dihaissy
+## Made by Modre14 and Saald15
 
 
