@@ -4,34 +4,37 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Assignment2MVC.Models;
+using Assignment2MVC;
+using ClassLibrary;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Assignment2MVC.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult SubmitForm()
         {
-            return View();
+            var model = new SubmissionForm();
+          
+          
+            return View(model);
         }
 
-        public IActionResult About()
+        public IActionResult ShowSubmissions()
         {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
+            var model = new SubmissionFormFileConnection();
+            
+            return View(model);
         }
 
-        public IActionResult Contact()
+        public IActionResult ShowSerialNumber()
         {
-            ViewData["Message"] = "Your contact page.";
 
-            return View();
+            var model = new SerialNumber();
+
+            return View(model);
         }
 
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+     
     }
 }

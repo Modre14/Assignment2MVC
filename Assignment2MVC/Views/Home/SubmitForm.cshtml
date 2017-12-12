@@ -1,0 +1,62 @@
+﻿@model ClassLibrary.SubmissionForm
+
+
+@{
+    <title>@ViewData["Title"] Submission form</title>
+}
+<h2>Submittion form</h2>
+<form asp-action="ShowSubmissions" method="post" class="form-horizontal" role="form">
+    <h4></h4>
+
+
+    <div class="form-group">
+        <label asp-for="FirstName" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="FirstName" class="form-control" />
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="SurName" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="SurName" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EmailAddress" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="EmailAddress" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PhoneNumber" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="PhoneNumber" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DateofBirth" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="DateofBirth" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SerialNumber" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="SerialNumber" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-5">
+            <input type="submit" class="btn btn-primary" value="Submit form" />
+        </div>
+    </div>
+</form>
+
+<p>Hello from our View Template!</p>

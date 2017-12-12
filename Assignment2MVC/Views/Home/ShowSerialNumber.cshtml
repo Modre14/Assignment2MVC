@@ -1,0 +1,15 @@
+﻿@model ClassLibrary.ISerialNumber
+@{
+    ViewData["Title"] = "ShowKeys";
+}
+
+<h2>ShowKeys</h2>
+<table>
+
+    @foreach (var s in Model.ReadSerialNumbers() as List<string>)
+    {
+        <tr>
+            <td>@s</td>
+        </tr>
+    }
+</table>
